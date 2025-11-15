@@ -1,0 +1,461 @@
+/* General Reset */
+
+@import url('ttps://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --themered:#e43a47;
+  --gray:#efefef
+}
+html{
+  scroll-behavior: smooth;
+}
+
+button, body {
+font-family:"poppins",sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.fullcontainer{
+  width: 130%;
+}
+.container{
+  width: 1140px;
+  margin: auto;
+  
+}
+.sectionTitle{
+  width: 300px;
+  border-bottom: 3px solid var(--themered);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 0 auto 50px;
+  position: relative;
+  padding: 10px 0;
+  text-transform: uppercase;
+  
+  
+}
+.sectionTitle::after{
+  display: inline-block;
+  content:"";
+  height: 15px;
+  width: 15px;
+  background-color: var(--themered);
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(70% - 10px);
+  transform: rotate(45deg) translate(50%,50%);
+  border: 4px solid #fff;
+}
+section{
+  padding: 100px 0;
+  position: relative;
+  
+}
+/* Navbar */
+header {
+  width: 100%; 
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  z-index:2;
+}
+header .container{
+  display: flex;
+  justify-content: space-between;
+}
+header .container .logo{
+  padding: 15px 0px;
+  height: 95px;
+
+  
+}
+header .container .logo img{
+  height: 100%;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li{
+  display: inline-block;
+}
+
+
+header nav ul li a {
+  display: inline-block;
+  height: 75px;
+  line-height: 75px;
+  padding: 0px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s;
+  margin-right:1px ;
+}
+
+
+ header nav ul li a:hover {
+background-color: var(--themered);
+}
+.banner{
+  min-height: vh;
+  width:130%;
+  background-image: url(/images/education-top-image.jpg);
+  background-size: cover;
+  background-attachment: fixed ;
+  
+}
+.banner h1{
+  margin:  230px 0 0 100px;
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+  width:50%;
+  line-height: 4.2;
+  font-weight: 100;
+  
+}
+.banner h1 span{
+  background-color: var(--themered);
+  display: inline-block;
+  line-height: 3.5rem;
+  padding: 0 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 0px;
+  
+}
+.banner p{
+  color: #fff;
+  width:100%;
+  text-shadow: 0 0 2px;
+  margin-top:10px ;
+  padding-left: 100px ;
+}
+
+.banner button {
+ background-color:var(--themered);
+  border: 1px;
+  outline: none;
+  color: #fff;
+  padding: 10px 15px ;
+  margin: 20px 0px 0px 165px;
+  font-size: 13px;
+  border-radius: 3px;
+  font-weight: 600;
+  
+}
+/*home section end*/
+
+/*about section star*/
+#aboutsection .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  position: relative;
+  height: 245px;
+}
+#aboutsection .cards > div{
+  width: 350px;
+  background-color: var(--gray);
+  padding: 35px;
+  color: #444;
+  text-align: center;
+  border-radius: 15px;
+  height: 215px;
+  border: 1px solid #ccc;
+  transition: 0.4s ;
+}
+#aboutsection .cards > div:hover{
+  width: 400px;
+  margin-top: -20px;
+  border-color: var(--themered);
+  height: 55px;
+  height: auto;
+  
+}
+
+#aboutsection .cards > div title{
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#aboutsection .cards > div p{
+  font-size: 14px;
+  margin-top: 15px;
+}
+#aboutsection .cards > div button {
+  border: 1px solid var(--themered);
+  outline: none;
+  padding: 7px 15px;
+  margin-top: 15px;
+  font-size: 12px;
+  border-radius:3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#aboutsection .cards > div:hover button{
+  background-color: var(--themered);
+  color: #fff;
+}
+/*about section end*/
+/*program section start*/
+.programs{
+  background-color: #e2e2e2;
+  width: 130%;
+}
+.programs .boxcontainer {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-gap:50px;
+}
+
+.programs .boxcontainer .box{
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 #c5c5c5;
+  position: relative;
+  margin-bottom: 15px;
+}
+.programs .boxcontainer .box .cardimage{
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+.programs .boxcontainer .box .cardimage:after{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
+.programs .boxcontainer .box:nth-child(1) .cardimage,
+.programs .boxcontainer .box:nth-child(1) .cardimage:after
+{
+  background-image: url("/project.images/photo1.jpg");
+}
+.programs .boxcontainer .box:nth-child(2) .cardimage,
+.programs .boxcontainer .box:nth-child(2) .cardimage:after
+{
+  background-image: url("/project.images/photo 2.jpg");
+}
+.programs .boxcontainer .box:nth-child(3) .cardimage,
+.programs .boxcontainer .box:nth-child(3) .cardimage:after
+{
+  background-image: url("/project.images/photo 3.jpg");
+}
+.programs .boxcontainer .box:nth-child(4) .cardimage,
+.programs .boxcontainer .box:nth-child(4) .cardimage:after
+{
+  background-image: url("/project.images/photo4.jpg");
+}
+.programs .boxcontainer .box:hover .cardimage:after{
+  top: 100%;
+}
+.programs .boxcontainer .box .programsTitle{
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #444;
+}
+.programs .boxcontainer .box .donationcount{
+  font-size: 13px;
+  font-weight: 600;
+  margin-top:10px ;
+  color: #444;
+}
+  .programs .boxcontainer .box .donationcount span{
+    color: var(--themered);
+  }
+  .programs .boxcontainer .box button{
+    position: absolute;
+    left: 50%;
+    background-color: var(--themered);
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+/*program section end*/  /*Education section start*/
+
+.education{
+  width: 130%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.education .videoplayer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.education .sectionTitle{
+  color: #fff;
+  text-shadow: 0 0 4px #000;
+}
+.education .educationcontainer{
+  position: absolute;
+  background-color:#00000097 ;
+  width: 600px;
+  top: 35vh;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+  padding: 30px;
+} 
+.education .educationcontainer h3{
+  font-size:35px ;
+  font-weight: 300pz;
+}
+.education .educationcontainer p{
+  font-size: 15px;
+  line-height: 20px;
+  margin: 10px 0 30px;
+}
+.education .educationcontainer button {
+  background-color:var(--themered) ;
+  border: 0;
+  color: #fff;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+}
+/*Education section end */
+/*Education section starr*/
+
+.gallery{
+  width: 130%;
+}
+.gallery .gallerycontainer{
+  column-count: 4;
+  column-gap: 20px;
+}
+.gallery .gallerycontainer .items{
+  position: relative;
+  margin-bottom:20px ;
+  overflow: hidden;
+}
+.gallery .gallerycontainer img{
+  width: 100%;
+  display: block;
+  transition: 0.4s;
+}
+.gallery .gallerycontainer .title{
+  position: absolute;
+  background-color: var(--gray);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.4s;
+}
+.gallery .gallerycontainer .items:hover .title{
+  opacity: 1;
+}
+.gallery .gallerycontainer .items:hover img{
+  transform: scale(2,2);
+}
+
+/*Education section end */
+/*Education section start*/
+.join{
+  width: 130%;
+  background-color: var(--themered);
+  color: #fff;
+  
+}
+.join .joinTitle{
+  font-size: 40px;
+  font-weight: 100;
+}
+.join .joinTitle span{
+  font-weight: 800;
+}
+.join button{
+  padding: 7px 15px;
+  margin-top: 20px;
+  border: 0;
+  outline: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+.joinNow  {
+  margin-right:10px ;
+  background-color:#424242 ;
+  color: #fff;
+}
+.adoptbtn{
+  background-color:var(--gray);
+}
+
+/*Education section end */
+/*Footer Start */
+
+footer{
+  width: 130%;
+  background-color: #181818;
+  color: #7f7f7f;
+  padding: 50px 0;
+  font-size: 14px;
+}
+footer .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px;
+}
+
+footer .title{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom:2px solid ;
+  margin-bottom:30px ;
+  padding: 0 0 5px 0 ;
+  
+}
+footer p{
+  margin-bottom: 10px ;
+}
+footer .linkcontainer ul{
+  list-style-type: none;
+}
+footer .linkcontainer ul li a{
+  text-decoration: none;
+  color: #7f7f7f;
+  margin-bottom: 10px;
+}
+/*Footer end */

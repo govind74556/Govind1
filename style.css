@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #1a0033, #000);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #a855f7;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #a855f7;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 50px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 500px;
+  animation: fadeInLeft 1.2s ease;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.purple {
+  color: #a855f7;
+}
+
+.hero-text p {
+  margin-top: 15px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #9333ea, #a855f7);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 20px #a855f7;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #c084fc;
+}
+
+.hero-image .profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid #a855f7;
+  box-shadow: 0 0 30px #a855f7;
+  animation: fadeInRight 1.2s ease;
+}
+
+/* Glow Animation */
+.glow {
+  animation: glowing 2s infinite alternate;
+}
+
+@keyframes glowing {
+  from { box-shadow: 0 0 5px #a855f7; }
+  to { box-shadow: 0 0 20px #a855f7; }
+}
+
+/* Skills Section */
+.skills {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #a855f7;
+}
+
+.skills p {
+  color: #bbb;
+  margin-bottom: 40px;
+}
+
+.skill-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  border:  2px solid #a855f7;
+  padding: 30px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #a855f7;
+  border-radius: 12px;
+  padding: 15px 30px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.box:hover {
+  background: #a855f7;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+ .icons a i{
+  text-decoration: none;
+  color:white;
+  margin: 20px;
+  font-size: 30px;
+}
+.heading span {
+  color: #a855f7;
+  text-align: center;
+  text-decoration: underline;
+
+}
+.heading {
+  padding:70px;
+  text-decoration: underline #a855f7 ;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px #a855f7;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.project-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  color: #cfcfcf;
+  margin-bottom: 15px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #444;
+  color: #a855f7;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.tag.html { background-color: #333; }
+.tag.css { background-color: #333; }
+.tag.javascript { background-color: #333; }
+.tag.uiux { background-color: #333;} 
+.tag.grid { background-color: #333;} 
+.project-card a{
+  text-decoration: none;
+  
+  
+}
+#contact {
+  background: black;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #a855f7;
+}
+
+#contact p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.contact-info {
+  margin-top: 30px;
+  color: #333;
+}
+/* Animations */
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive */
+@media (max-width: 568px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: rgba(0,0,0,0.9);
+    width: 200px;
+    padding: 20px;
+    border-left: 2px solid #a855f7;
+  }
+
+  .navbar ul.active {
+    right: 0px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .hero-image .profile-img {
+    width: 180px;
+    height: 180px;
+    margin-top: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
